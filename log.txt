@@ -1,0 +1,178 @@
+(myvenv) C:\test\oscar_search_test\myvenv\Scripts>cd ../
+
+(myvenv) C:\test\oscar_search_test\myvenv>cd ../
+
+(myvenv) C:\test\oscar_search_test>pip install django
+Collecting django
+  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 407'))': /simple/django/
+  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 407'))': /simple/django/
+  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 407'))': /simple/django/
+  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 407'))': /simple/django/
+  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 407 407'))': /simple/django/
+  Could not find a version that satisfies the requirement django (from versions: )
+No matching distribution found for django
+
+(myvenv) C:\test\oscar_search_test>setx HTTP_PROXY=http://U633784:XyeDHx3z3@127.0.0.1:8080
+エラー: 構文が無効です。
+"SETX /?" と入力すると使用法が表示されます。
+
+(myvenv) C:\test\oscar_search_test>set HTTP_PROXY=http://U633784:XyeDHx3z3@127.0.0.1:8080
+
+(myvenv) C:\test\oscar_search_test>set HTTPS_PROXY=https://U633784:XyeDHx3z3@127.0.0.1:8080
+
+(myvenv) C:\test\oscar_search_test>python -m pip install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/62/ca/94d32a6516ed197a491d17d46595ce58a83cbb2fca280414e57cd86b84dc/pip-19.2.1-py2.py3-none-any.whl (1.4MB)
+    100% |????????????????????????????????| 1.4MB 3.3MB/s
+Installing collected packages: pip
+  Found existing installation: pip 18.1
+    Uninstalling pip-18.1:
+      Successfully uninstalled pip-18.1
+Successfully installed pip-19.2.1
+
+(myvenv) C:\test\oscar_search_test>pip list
+Package    Version
+---------- -------
+pip        19.2.1
+setuptools 40.6.2
+
+(myvenv) C:\test\oscar_search_test>pip install django
+Collecting django
+  Using cached https://files.pythonhosted.org/packages/39/b0/2138c31bf13e17afc32277239da53e9dfcce27bac8cb68cf1c0123f1fdf5/Django-2.2.3-py3-none-any.whl
+Collecting pytz (from django)
+  Using cached https://files.pythonhosted.org/packages/3d/73/fe30c2daaaa0713420d0382b16fbb761409f532c56bdcc514bf7b6262bb6/pytz-2019.1-py2.py3-none-any.whl
+Collecting sqlparse (from django)
+  Using cached https://files.pythonhosted.org/packages/ef/53/900f7d2a54557c6a37886585a91336520e5539e3ae2423ff1102daf4f3a7/sqlparse-0.3.0-py2.py3-none-any.whl
+Installing collected packages: pytz, sqlparse, django
+Successfully installed django-2.2.3 pytz-2019.1 sqlparse-0.3.0
+
+(myvenv) C:\test\oscar_search_test>pip list
+Package    Version
+---------- -------
+Django     2.2.3
+pip        19.2.1
+pytz       2019.1
+setuptools 40.6.2
+sqlparse   0.3.0
+
+(myvenv) C:\test\oscar_search_test>pip install django-bootstrap4
+Collecting django-bootstrap4
+  Using cached https://files.pythonhosted.org/packages/02/5a/485d61f6dafa4e4d001a7880b04f40f04fe485a54b2756b0536ed2052342/django-bootstrap4-0.0.8.tar.gz
+Installing collected packages: django-bootstrap4
+  Running setup.py install for django-bootstrap4 ... done
+Successfully installed django-bootstrap4-0.0.8
+
+(myvenv) C:\test\oscar_search_test>pip install mysqlclient
+Collecting mysqlclient
+  Using cached https://files.pythonhosted.org/packages/e9/30/b40f39fcc6c39038cad3263b3b4280133fb033e0565fe4127d507aa011fe/mysqlclient-1.4.2.post1-cp37-cp37m-win_amd64.whl
+Installing collected packages: mysqlclient
+Successfully installed mysqlclient-1.4.2.post1
+
+(myvenv) C:\test\oscar_search_test>pip lsit
+ERROR: unknown command "lsit" - maybe you meant "list"
+
+(myvenv) C:\test\oscar_search_test>pip list
+Package           Version
+----------------- -----------
+Django            2.2.3
+django-bootstrap4 0.0.8
+mysqlclient       1.4.2.post1
+pip               19.2.1
+pytz              2019.1
+setuptools        40.6.2
+sqlparse          0.3.0
+
+(myvenv) C:\test\oscar_search_test>pip freeze
+Django==2.2.3
+django-bootstrap4==0.0.8
+mysqlclient==1.4.2.post1
+pytz==2019.1
+sqlparse==0.3.0
+
+(myvenv) C:\test\oscar_search_test>git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive ...       alias of --recurse-submodules
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+
+
+(myvenv) C:\test\oscar_search_test>git clone https://github.com/R-D-project/R_repo01.git
+Cloning into 'R_repo01'...
+remote: Enumerating objects: 212, done.
+remote: Counting objects: 100% (212/212), done.
+remote: Compressing objects: 100% (97/97), done.
+Receiving objects:  51% (109/212)used 211 (delta 105), pack-reused 0Receiving objects:  48% (102/212)
+Receiving objects: 100% (212/212), 33.98 KiB | 429.00 KiB/s, done.
+Resolving deltas: 100% (106/106), done.
+
+(myvenv) C:\test\oscar_search_test>git clone -b mobbranch https://github.com/R-D-project/R_repo01.git
+Cloning into 'R_repo01'...
+remote: Enumerating objects: 212, done.
+remote: Counting objects: 100% (212/212), done.
+remote: Compressing objects: 100% (97/97), done.
+remote: Total 212 (delta 106), reused 211 (delta 105), pack-reused 0
+Receiving objects: 100% (212/212), 33.98 KiB | 287.00 KiB/s, done.
+Resolving deltas: 100% (106/106), done.
+
+(myvenv) C:\test\oscar_search_test>cd C:\test\oscar_search_test\R_repo01
+
+(myvenv) C:\test\oscar_search_test\R_repo01>python manage.py createsuperuser
+ユーザー名 (leave blank to use 'u633784'): admin
+メールアドレス: admin@sample.com
+Password:
+Password (again):
+このパスワードは ユーザー名 と似すぎています。
+このパスワードは短すぎます。最低 8 文字以上必要です。
+このパスワードは一般的すぎます。
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+(myvenv) C:\test\oscar_search_test\R_repo01>pip freeze
+Django==2.2.3
+django-bootstrap4==0.0.8
+mysqlclient==1.4.2.post1
+pytz==2019.1
+sqlparse==0.3.0
+
+(myvenv) C:\test\oscar_search_test\R_repo01>
